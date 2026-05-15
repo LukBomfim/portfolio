@@ -25,6 +25,8 @@ a:hover {
     color: blue;
 }
 
+
+/* STACK DOS PROJETOS */
 .stack span{
     display: inline-block;
     background-color: #ebebeb00;
@@ -40,6 +42,57 @@ a:hover {
     transition: 0.2s;
 }
 .python:hover{
+    border-color: #306998;
     background-color: #306998;
     color: white;
+}
+.html{
+    border-color: #e34c26;
+    color: #e34c26;
+    transition: 0.2s;
+}
+.html:hover{
+    border-color: #e34c26;
+    background-color: #e34c26;
+    color: white;
+}
+.css{
+    border-color: #264de4;
+    color: #264de4;
+    transition: 0.2s;
+}
+.css:hover{
+    border-color: #264de4;
+    background-color: #264de4;
+    color: white;
+}
+.sqlite{
+    border-color: #003b57;
+    color: #003b57;
+    transition: 0.2s;
+}
+.sqlite:hover{
+    border-color: #003b57;
+    background-color: #003b57;
+    color: white;
+}
+.flask{
+    border-color: #000000;
+    color: #000000;
+    transition: 0.2s;
+}
+.flask:hover{
+    border-color: #000000;
+    background-color: #000000;
+    color: white;
+}
+.json{
+    border-color: #ebc000;
+    color: #ebc000;
+    transition: 0.2s;
+}
+.json:hover{
+    border-color: #ebc000;
+    background-color: #ebc000;
+    color: black;
 }
