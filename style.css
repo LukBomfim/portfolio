@@ -226,7 +226,7 @@ nav a:hover {
     border-color: var(--cor-borda-hover);
 }
 
-#lista-projetos h4 {
+h4 {
     font-size: 1.1rem;
     color: #fff;
     margin-bottom: 0.5rem;
@@ -249,10 +249,31 @@ nav a:hover {
     font-size: 0.75rem;
     padding: 0.3rem 0.8rem;
     border-radius: 999px;
-    border: 1px solid var(--cor-borda);
-    color: var(--cor-texto-fraco);
+    
     background-color: var(--cor-fundo);
 }
+
+.span-python {
+    border: 1px solid;
+    color: #3572A5;
+}
+.span-html {
+    border: 1px solid;
+    color: #e34c26;
+}
+.span-css {
+    border: 1px solid;
+    color: #264de4;
+}
+.span-javascript {
+    border: 1px solid;
+    color: #f0db4f;
+}
+.span-java {
+    border: 1px solid;
+    color: #b07219;
+}
+
 
 #lista-projetos a {
     display: inline-flex;
