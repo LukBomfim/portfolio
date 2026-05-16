@@ -1,24 +1,28 @@
+/* =============================================
+   VARIÁVEIS
+   ============================================= */
 :root {
-    --cor-fundo: #080d14;           /* fundo geral: azul bem escuro */
-    --cor-fundo-secao: #0d1520;     /* fundo dos cards e seções */
-    --cor-borda: #1a2d45;           /* cor das bordas */
-    --cor-borda-hover: #2a5298;     /* borda ao passar o mouse */
-    --cor-texto: #c8d8f0;           /* texto principal */
-    --cor-texto-fraco: #6a8ab0;     /* texto secundário */
-    --cor-destaque: #4d9fff;        /* azul principal */
-    --cor-destaque-hover: #2a80e8;  /* azul mais escuro para hover */
+    --cor-fundo: #080d14;
+    --cor-fundo-secao: #0d1520;
+    --cor-borda: #1a2d45;
+    --cor-borda-hover: #2a5298;
+    --cor-texto: #c8d8f0;
+    --cor-texto-fraco: #6a8ab0;
+    --cor-destaque: #4d9fff;
+    --cor-destaque-hover: #2a80e8;
     --fonte: 'Segoe UI', sans-serif;
     --raio: 12px;
 }
 
-/* RESET */
+/* =============================================
+   RESET E BASE
+   ============================================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BASE */
 html {
     scroll-behavior: smooth;
 }
@@ -31,7 +35,9 @@ body {
     line-height: 1.6;
 }
 
-/* NAVEGAÇÃO */
+/* =============================================
+   NAVEGAÇÃO
+   ============================================= */
 header {
     position: sticky;
     top: 0;
@@ -53,8 +59,6 @@ nav {
     color: var(--cor-destaque);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.02em;
 }
 
 nav ul {
@@ -74,19 +78,23 @@ nav a:hover {
     color: var(--cor-destaque);
 }
 
+/* =============================================
+   HERO + SOBRE (lado a lado)
+   ============================================= */
 .hero-sobre-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 4rem 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 3rem;
-    align-items: flex-start;
     border-bottom: 1px solid var(--cor-borda);
 }
 
 #hero {
-    flex: 1;
-    padding-top: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 #hero h1 {
@@ -103,37 +111,28 @@ nav a:hover {
 
 #hero h2 {
     font-size: 1.1rem;
-    font-weight: 500;
     color: var(--cor-texto);
-    margin-bottom: 0.25rem;
 }
 
-#hero p {
-    color: var(--cor-texto-fraco);
-    font-size: 0.95rem;
-}
-
-/* SOBRE */
+/* =============================================
+   SOBRE (container)
+   ============================================= */
 #sobre {
+    width: 100%;
+    max-width: 600px;
     flex: 1;
     background-color: var(--cor-fundo-secao);
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio);
     padding: 2rem;
+    text-align: center;
 }
 
 #sobre h3 {
     color: var(--cor-destaque);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     font-size: 0.85rem;
-    margin-bottom: 1.5rem;
-}
-
-.sobre-perfil {
-    display: flex;
-    gap: 1.25rem;
-    align-items: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 1.5rem;
 }
 
@@ -143,18 +142,12 @@ nav a:hover {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--cor-borda-hover);
-    flex-shrink: 0;
+    margin-bottom: 1rem;
 }
 
-.sobre-perfil p {
+#sobre p {
     color: var(--cor-texto-fraco);
     font-size: 0.9rem;
-    line-height: 1.7;
-}
-
-.conhecimento-label {
-    color: var(--cor-texto-fraco);
-    font-size: 0.85rem;
     margin-bottom: 1rem;
 }
 
@@ -162,7 +155,9 @@ nav a:hover {
 .conhecimento {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.75rem;
+    margin-top: 0.5rem;
 }
 
 .linguagem {
@@ -191,7 +186,9 @@ nav a:hover {
     height: 26px;
 }
 
-/* CONTAINER */
+/* =============================================
+   CONTAINER (projetos e contato)
+   ============================================= */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -202,23 +199,19 @@ nav a:hover {
 .container h3 {
     font-size: 0.85rem;
     color: var(--cor-destaque);
-    letter-spacing: 0.05em;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 2rem;
 }
 
-/* PROJETOS */
+/* =============================================
+   PROJETOS
+   ============================================= */
 #lista-projetos {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
     gap: 1.5rem;
-}
-
-@media (max-width: 700px) {
-    #lista-projetos {
-        grid-template-columns: 1fr;
-    }
 }
 
 #lista-projetos li {
@@ -239,7 +232,7 @@ nav a:hover {
     margin-bottom: 0.5rem;
 }
 
-#lista-projetos > li > p {
+#lista-projetos p {
     color: var(--cor-texto-fraco);
     font-size: 0.9rem;
     margin-bottom: 1.25rem;
@@ -275,18 +268,15 @@ nav a:hover {
     color: var(--cor-destaque-hover);
 }
 
-/* CONTATO */
-.contato-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-}
-
+/* =============================================
+   CONTATO
+   ============================================= */
 .btn-contato {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.65rem 1.25rem;
+    margin: 0 0.5rem 0.5rem 0; /* espaço entre os botões sem precisar de div */
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio);
     color: var(--cor-texto-fraco);
@@ -301,7 +291,9 @@ nav a:hover {
     color: var(--cor-destaque);
 }
 
-/* RODAPÉ */
+/* =============================================
+   RODAPÉ
+   ============================================= */
 footer {
     text-align: center;
     padding: 2rem;
@@ -309,13 +301,15 @@ footer {
     font-size: 0.8rem;
 }
 
-/* RESPONSIVO */
+/* =============================================
+   RESPONSIVO
+   ============================================= */
 @media (max-width: 700px) {
-    .hero-sobre-wrapper {
-        flex-direction: column;
-    }
-
     #hero h1 {
         font-size: 1.7rem;
+    }
+
+    #lista-projetos {
+        grid-template-columns: 1fr;
     }
 }
