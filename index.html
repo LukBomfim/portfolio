@@ -3,98 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas Bomfim, desenvolvedor Full-stack.">
     <title>Lucas Bomfim | dev</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
+            <a href="#" class="logo">Lucas Bomfim</a>
             <ul>
-                <li>
-                    <a href="#">Início</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#projetos">Projetos</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>
-                Olá! Eu sou Lucas Bomfim
-            </h1>
-            <h2>
-                Desenvolvedor Full-stack - Criação Web/Desktop
-            </h2>
-        </section>
 
-        <section id="sobre" class="container">
-            <h3>
-                Sobre mim
-            </h3>
+        <!-- div auxiliar para colocar hero e sobre lado a lado -->
+        <div class="hero-sobre-wrapper">
 
-            <img src="https://avatars.githubusercontent.com/u/122469738?v=4" alt="Foto de perfil" id="foto-perfil">
-            <p>
-                Me chamo Lucas Bomfim, tenho 20 anos.
-                Atualmente cursando o 3° período de Ciência da Computação na Afya - UNIMA.
-            </p>
-            <p>
-               Conhecimento em
-            </p>
-            <div class="conhecimento">
-                <div class="linguagem" id="python">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                    Python
-                </div>
-                <div class="linguagem" id="html">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                    HTML
-                </div>
-                <div class="linguagem" id="css">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                    CSS
-                </div>
-                <div class="linguagem" id="js">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                    JavaScript
-                </div>
-                <div class="linguagem" id="sql">
-                    <img src="https://images.icon-icons.com/1502/PNG/512/officedatabase_103574.png" alt="SQL">
-                    SQL
-                </div>
-                <div class="linguagem" id="json">
-                    <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="JSON">
-                    Json
-                </div>
-            </div>
+            <section id="hero">
+                <h1>Olá! Eu sou <span class="destaque">Lucas Bomfim</span></h1>
+                <h2>Desenvolvedor Full-stack - Criação Web/Desktop</h2>
+            </section>
 
-        </section>
+            <section id="sobre" class="container">
+                <h3>Sobre mim</h3>
+
+                <img src="https://avatars.githubusercontent.com/u/122469738?v=4" alt="Foto de perfil" id="foto-perfil">
+                <p>
+                    Me chamo Lucas Bomfim, tenho 20 anos.
+                    Atualmente cursando o 3° período de Ciência da Computação na Afya - UNIMA.
+                </p>
+                <p>Conhecimento em</p>
+
+                <div class="conhecimento">
+                    <div class="linguagem" id="python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        Python
+                    </div>
+                    <div class="linguagem" id="html">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        HTML
+                    </div>
+                    <div class="linguagem" id="css">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                        CSS
+                    </div>
+                    <div class="linguagem" id="js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        JavaScript
+                    </div>
+                    <div class="linguagem" id="sql">
+                        <img src="https://images.icon-icons.com/1502/PNG/512/officedatabase_103574.png" alt="SQL">
+                        SQL
+                    </div>
+                    <div class="linguagem" id="json">
+                        <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="JSON">
+                        Json
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
         <section id="projetos" class="container">
-            <h3>
-                Projetos
-            </h3>
+            <h3>Projetos</h3>
 
             <ul id="lista-projetos">
                 <li>
-                    <!-- EXEMPLO DE PROJETO -->
-                    <h4>
-                        Fcar
-                    </h4>
+                    <h4>Fcar</h4>
                     <p>
                         Site institucional para a oficina Fcar. Contendo catálogo de peças
                         e óleos lubrificantes.
                     </p>
-                    
+
                     <div class="stack">
                         <span class="python">Python</span>
                         <span class="html">HTML</span>
@@ -104,8 +92,8 @@
                         <span class="json">Json</span>
                     </div>
 
-                    <a href="https://fcar-2qtg.onrender.com/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <a href="https://fcar-2qtg.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                             <polyline points="15 3 21 3 21 9"/>
                             <line x1="10" y1="14" x2="21" y2="3"/>
@@ -117,20 +105,18 @@
         </section>
 
         <section id="contato" class="container">
-            <h3>
-                Contato
-            </h3>
+            <h3>Contato</h3>
 
-            <a href="mailto:lucasbomfim2801@gmail.com" target="_blank" class="btn-contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="mailto:lucasbomfim2801@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-contato">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                     <polyline points="22,6 12,13 2,6"/>
                 </svg>
                 E-mail
             </a>
 
-            <a href="https://www.linkedin.com/in/lucas-bomfim-42358a309/" target="_blank" class="btn-contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="https://www.linkedin.com/in/lucas-bomfim-42358a309/" target="_blank" rel="noopener noreferrer" class="btn-contato">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="4"/>
                     <line x1="8" y1="11" x2="8" y2="17"/>
                     <line x1="8" y1="7" x2="8" y2="8"/>
@@ -140,22 +126,21 @@
                 LinkedIn
             </a>
 
-            <a href="https://www.instagram.com/luk.bomfim" target="_blank" class="btn-contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="https://www.instagram.com/luk.bomfim" target="_blank" rel="noopener noreferrer" class="btn-contato">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                     <circle cx="12" cy="12" r="4"/>
                     <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
                 </svg>
-               Instagram
+                Instagram
             </a>
 
-            <a href="https://github.com/LukBomfim" target="_blank" class="btn-contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="https://github.com/LukBomfim" target="_blank" rel="noopener noreferrer" class="btn-contato">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                 </svg>
-                Github
+                GitHub
             </a>
-
         </section>
 
     </main>
