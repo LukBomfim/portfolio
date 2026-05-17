@@ -236,11 +236,13 @@ h4 {
 }
     /* EM PROGRESSO */
 .wip {
+    border-radius: var(--raio);
     background-color: #facc15;
     color: black;
 }
     /* CONCLUIDO */
 .concluido {
+    border-radius: var(--raio);
     background-color: #10b981;
     color: white;
 }
@@ -294,6 +296,7 @@ h4 {
     color: var(--cor-destaque);
     text-decoration: none;
     font-size: 0.875rem;
+    margin-right: 2rem;
     transition: color 0.2s;
 }
 
