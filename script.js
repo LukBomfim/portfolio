@@ -1,5 +1,5 @@
 const headers = {
-    'Authorization': ''
+    'Authorization': `token ${TOKEN}`
 }
 
 async function carregarRepositorios() {
@@ -8,7 +8,8 @@ async function carregarRepositorios() {
         'https://api.github.com/repos/jcdev01/Locadora',
         'https://api.github.com/repos/LukBomfim/projeto-programacao',
         'https://api.github.com/repos/LukBomfim/Biblioteca',
-        'https://api.github.com/repos/LukBomfim/MELLK'
+        'https://api.github.com/repos/LukBomfim/MELLK',
+        'https://api.github.com/repos/LukBomfim/Portfolio',
     ]
 
     const respostas = await Promise.all(
