@@ -262,13 +262,12 @@ h4 {
     font-size: 0.75rem;
     padding: 0.3rem 0.8rem;
     border-radius: 999px;
-    
     background-color: var(--cor-fundo);
 }
 
 .span-python {
     border: 1px solid;
-    color: #3572A5;
+    color: #3572a5;
 }
 .span-html {
     border: 1px solid;
@@ -276,11 +275,11 @@ h4 {
 }
 .span-css {
     border: 1px solid;
-    color: #264de4;
+    color: #663399;
 }
 .span-javascript {
     border: 1px solid;
-    color: #f0db4f;
+    color: #f1e05a;
 }
 .span-java {
     border: 1px solid;
