@@ -1,7 +1,7 @@
 async function carregarRepositorios() {
     const urls = [
         'https://api.github.com/repos/LukBomfim/Fcar',
-        'https://api.github.com/repos/jcdev01/Locadora',
+        'https://api.github.com/repos/LukBomfim/Locadora',
         'https://api.github.com/repos/LukBomfim/projeto-programacao',
         'https://api.github.com/repos/LukBomfim/Biblioteca',
         'https://api.github.com/repos/LukBomfim/MELLK',
@@ -20,7 +20,7 @@ async function carregarRepositorios() {
 }
 
 function concluido(repo){
-    if (repo.topics.includes('production-ready') || repo.name === 'Locadora') {
+    if (repo.topics.includes('production-ready')) {
         return true
     } else if (repo.topics.includes('work-in-progress')) {
         return false
