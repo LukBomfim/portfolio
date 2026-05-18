@@ -5,7 +5,7 @@ async function carregarRepositorios() {
         'https://api.github.com/repos/LukBomfim/projeto-programacao',
         'https://api.github.com/repos/LukBomfim/Biblioteca',
         'https://api.github.com/repos/LukBomfim/MELLK',
-        'https://api.github.com/repos/LukBomfim/Portfolio',
+        'https://api.github.com/repos/LukBomfim/lista-de-tarefas'
     ]
 
     const respostas = await Promise.all(
