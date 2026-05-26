@@ -192,6 +192,25 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
+/* DESCRIÇÃO */
+#descricao p {
+    color: var(--cor-texto-fraco);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#descricao b {
+    color: var(--cor-texto);
+}
+
+.destaque-stack {
+    color: var(--cor-destaque);
+}
+
+.btn-cta {
+    margin-top: 1rem;
+}
+
 /* PROJETOS */
 #lista-projetos {
     list-style: none;
